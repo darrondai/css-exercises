@@ -39,19 +39,14 @@ html {
 
 .nav {
   background-color: #642cde;
-  grid-row: 2;
-  grid-column: 2;
 }
 
 .article {
   background-color: #7e1dc3;
-  grid-row: 3;
-  grid-column: 2;
 }
 
 .footer {
   background-color: #393f4d;
-  grid-row: 4;
   grid-column: 1 / -1;
 }
 
