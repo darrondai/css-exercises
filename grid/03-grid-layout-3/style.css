@@ -5,9 +5,8 @@
 
 .container {
   display: grid;
-  grid-template-rows: 3fr 1fr 9fr 1fr;
   grid-template-columns: 1fr 4fr;
-  height: 100vh;
+  gap: 8px;
 
   text-align: center;
 }
@@ -46,7 +45,17 @@
 }
 
 .sidebar {
+  grid-row: 2 / span 2;
+  display: grid;
+  row-gap: 48px;
+
   background-color: #c50208;
+}
+
+.sidebar .photo,
+.sidebar .side-content {
+  display: grid;
+  align-items: center;
 }
 
 .sidebar .photo {
@@ -81,8 +90,8 @@
 
 .article {
   display: grid;
-  grid-template-rows: repeat();
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
 
   background-color: #bccbde;
 }
@@ -98,12 +107,14 @@
   background-color: #ffffff;
   color: black;
   text-align: center;
+  height: 200px;
 }
 
 .card p {
   color: black;
   font-weight: normal;
   font-size: 14px;
+  padding: 5px;
 }
 
 .card .title {
@@ -112,6 +123,8 @@
 }
 
 .footer {
+  grid-column: 1 / span 2;
+
   background-color: #393f4d;
 }
 
